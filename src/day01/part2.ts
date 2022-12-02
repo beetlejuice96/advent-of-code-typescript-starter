@@ -24,7 +24,6 @@ export function part2(input: string): number {
   });
 
   const orderCaloriesByDesc = totalCaloriesPerElf.sort((a, b) => b - a);
-  console.log(orderCaloriesByDesc);
   const sumFirstTree =
     orderCaloriesByDesc[0] + orderCaloriesByDesc[1] + orderCaloriesByDesc[2];
   return sumFirstTree;
