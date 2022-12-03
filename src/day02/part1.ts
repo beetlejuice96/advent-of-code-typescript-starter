@@ -25,7 +25,7 @@ const rules = {
     tie: "Y",
   },
   C: {
-    point: 2,
+    point: 3,
     win: "Y",
     lose: "X",
     tie: "Z",
