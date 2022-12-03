@@ -39,7 +39,6 @@ export function part2(input: string): number {
     const match: string[] = round.split(" ");
     console.log(match);
     const matchRulesEnemy = rules[match[0] as keyof typeof rules];
-    console.log(matchRulesEnemy);
     if (match[1] === "X") {
       pointsPerMatch +=
         pointsRound.lose +
@@ -57,7 +56,6 @@ export function part2(input: string): number {
         pointsRound.win +
         rules[matchRulesEnemy.lose as keyof typeof rules].point;
     }
-    console.log(pointsPerMatch);
     totalPoints += pointsPerMatch;
   });
   return totalPoints;
