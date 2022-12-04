@@ -29,7 +29,6 @@ export function part1(input: string): number {
 const arrayElf = (sectionsElf: string) => {
   const lengthElf = parseInt(sectionsElf.split("-")[1]);
   const initElf = parseInt(sectionsElf.split("-")[0]);
-  console.log(initElf, lengthElf);
   const arrayNumberElf = [];
   for (let index = initElf; index <= lengthElf; index++) {
     arrayNumberElf.push(index);
